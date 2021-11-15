@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 19:44:33 2021
+
+@author: Rafli_Riansyah
+"""
+jawab = "ya"
+
+
+while(jawab == "ya"):
+    angka = int(input("masukan angka : "))
+    jawab = str(input("ingin lanjut atau tidak: "))
+
+def OrdinalNumber(x):
+    if (angka==1):
+        return str (angka)+ "st"
+    if (angka==2):
+        return str(angka)+ "nd"
+    if (angka==3):
+        return str(angka)+ "rd"
+    if angka in range(4,21):
+        return str(angka)+ "th"
+    if (angka==21):
+        return str (angka)+ "st"
+    if (angka==22):
+        return str (angka)+ "nd"
+    if (angka==23):
+        return str (angka)+ "rd"
+    else:
+        print("error")
+   
+print(OrdinalNumber(angka))
+
